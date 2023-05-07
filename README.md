@@ -15,3 +15,8 @@ I use [DrRacket](https://docs.racket-lang.org/drracket/index.html) as the IDE to
 - [x] [Exercise 1.8](./Chapter01/08.rkt)
 - [x] [Exercise 1.9](./Chapter01/09.rkt)
 - [x] [Exercise 1.10](./Chapter01/10.rkt)
+- [x] [Exercise 1.11](./Chapter01/11.rkt)
+- [x] [Exercise 1.12](./Chapter01/12.rkt)
+- [ ] [Exercise 1.13](./Chapter01/13.rkt)
+- [x] [Exercise 1.14](./Chapter01/14.rkt)
+- [x] [Exercise 1.15](./Chapter01/15.rkt)
