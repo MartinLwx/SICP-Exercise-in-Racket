@@ -2,7 +2,6 @@
 After taking CS61 course, I start to apperciate the beauty of Scheme, and I became eager to explore its capabilities further. So I begin to read the famous SCIP book and do exercise.
 
 I use [DrRacket](https://docs.racket-lang.org/drracket/index.html) as the IDE to test my code. The explanation will be included in the comment if available.
-
 ## Exercises
 ### Chapter 1. Building Abstractions with Procedures
 - [x] [Exercise 1.1](./Chapter01/01.rkt)
@@ -33,3 +32,14 @@ I use [DrRacket](https://docs.racket-lang.org/drracket/index.html) as the IDE to
 - [x] [Exercise 1.26](./Chapter01/26.rkt)
 - [x] [Exercise 1.27](./Chapter01/27.rkt)
 - [x] [Exercise 1.28](./Chapter01/28.rkt)
+- [x] [Exercise 1.29](./Chapter01/29.rkt)
+- [x] [Exercise 1.30](./Chapter01/30.rkt)
+- [x] [Exercise 1.31](./Chapter01/31.rkt)
+- [x] [Exercise 1.32](./Chapter01/32.rkt)
+- [x] [Exercise 1.33](./Chapter01/33.rkt)
+- [x] [Exercise 1.34](./Chapter01/34.rkt)
+- [x] [Exercise 1.35](./Chapter01/35.rkt)
+- [x] [Exercise 1.36](./Chapter01/36.rkt)
+- [x] [Exercise 1.37](./Chapter01/37.rkt)
+- [x] [Exercise 1.38](./Chapter01/38.rkt)
+- [x] [Exercise 1.39](./Chapter01/39.rkt)
