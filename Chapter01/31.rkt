@@ -27,7 +27,7 @@
 ;; pi / 4 = (2 * 4 * 4 * 6 * 6 * 8...* n) / (3 * 3 * 5 * 5 * 7 * ... * (n - 1) * (n - 1))
 ;;        = (2 * n * (4 * 6 * 8 ...)(4 * 6 * 8 ...)) / ((3 * 5 * 7 * ...)(3 * 5 * 7 * ...))
 (define (compute-pi n)
-  (let ([nominator (* 2
+  (let ([numerator (* 2
                       n
                       (square (product (lambda (x) x)
                                     4
@@ -38,7 +38,7 @@
                                       (lambda (x) (+ 2 x))
                                       (- n 1)))])
     (/ (* 4.0
-          nominator)
+          numerator)
        denominator)))
 
 
