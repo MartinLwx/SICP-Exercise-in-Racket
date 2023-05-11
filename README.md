@@ -3,6 +3,12 @@ After taking CS61 course, I start to apperciate the beauty of Scheme, and I beca
 
 I use [DrRacket](https://docs.racket-lang.org/drracket/index.html) as the IDE to test my code. The explanation will be included in the comment if available.
 ## Exercises
+### Chapter 2. Building Abstractions with Data
+- [x] [Exercise 1.1](./Chapter02/01.rkt)
+- [x] [Exercise 1.2](./Chapter02/02.rkt)
+- [x] [Exercise 1.3](./Chapter02/03.rkt)
+- [x] [Exercise 1.4](./Chapter02/04.rkt)
+- [x] [Exercise 1.5](./Chapter02/05.rkt)
 ### Chapter 1. Building Abstractions with Procedures
 - [x] [Exercise 1.1](./Chapter01/01.rkt)
 - [x] [Exercise 1.2](./Chapter01/02.rkt)

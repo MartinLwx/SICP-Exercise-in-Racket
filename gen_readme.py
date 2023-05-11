@@ -14,6 +14,8 @@ def get_chapter_title(idx: int) -> str:
     match idx:
         case 1:
             return "### Chapter 1. Building Abstractions with Procedures"
+        case 2:
+            return "### Chapter 2. Building Abstractions with Data"
         case _:
             raise ValueError(f"Not implement for Chapter{idx}")
 
