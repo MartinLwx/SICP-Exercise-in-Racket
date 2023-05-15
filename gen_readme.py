@@ -20,7 +20,7 @@ def get_chapter_title(idx: int) -> str:
             raise ValueError(f"Not implement for Chapter{idx}")
 
 
-def traverse_folder(f: Path) -> list[str]:
+def traverse_folder(f: Path, chapter_idx: int) -> list[str]:
     checkboxs = []
     files = sorted(f.iterdir(), key=lambda x: int(x.stem))
     assert len(files) > 0, f"Expect at least one file in {f}"
@@ -29,20 +29,25 @@ def traverse_folder(f: Path) -> list[str]:
     for i in range(1, max_index + 1):
         i_rkt = f / f"{i:02}.rkt"
         if i_rkt.exists():
-            checkboxs.append(f"- [x] [Exercise 1.{i}](./{f.stem}/{i:02}.rkt)")
+            checkboxs.append(
+                f"- [x] [Exercise {chapter_idx}.{i}](./{f.stem}/{i:02}.rkt)"
+            )
         else:
-            checkboxs.append(f"- [ ] [Exercise 1.{i}](./{f.stem}/{i:02}.rkt)")
+            checkboxs.append(
+                f"- [ ] [Exercise {chapter_idx}.{i}](./{f.stem}/{i:02}.rkt)"
+            )
 
     return checkboxs
 
 
 def gen_exercises():
     rows = ["## Exercises"]
-    for folder in Path().cwd().iterdir():
+    for folder in sorted(Path().cwd().iterdir()):
         if folder.is_dir() and folder.stem.startswith("Chapter"):
             print(f"Processing {folder}")
-            rows.append(get_chapter_title(int(folder.stem.removeprefix("Chapter"))))
-            rows.extend(traverse_folder(folder))
+            chapter_idx = int(folder.stem.removeprefix("Chapter"))
+            rows.append(get_chapter_title(chapter_idx))
+            rows.extend(traverse_folder(folder, chapter_idx))
     return rows
 
 
