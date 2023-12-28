@@ -24,7 +24,11 @@ def traverse_folder(f: Path, chapter_idx: int) -> list[str]:
     checkboxs = []
     files = sorted(f.iterdir(), key=lambda x: int(x.stem))
     assert len(files) > 0, f"Expect at least one file in {f}"
-    max_index = int(files[-1].stem)
+    if files[-1].stem.isdigit():
+        max_index = int(files[-1].stem)
+    else:
+        # e.g. 58a.rkt, the max_index should be 58
+        max_index = int(files[-1].stem[:-1])
     print(f"Find the maximum index in {f.stem}: {max_index}")
     for i in range(1, max_index + 1):
         i_rkt = f / f"{i:02}.rkt"
